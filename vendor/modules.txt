@@ -1,0 +1,46 @@
+# github.com/StackExchange/wmi v0.0.0-20210224194228-fe8f1750fd46
+## explicit
+github.com/StackExchange/wmi
+# github.com/dswarbrick/smart v0.0.0-20190505152634-909a45200d6d
+## explicit
+github.com/dswarbrick/smart/ata
+github.com/dswarbrick/smart/drivedb
+github.com/dswarbrick/smart/ioctl
+github.com/dswarbrick/smart/nvme
+github.com/dswarbrick/smart/scsi
+github.com/dswarbrick/smart/utils
+# github.com/ghodss/yaml v1.0.0
+github.com/ghodss/yaml
+# github.com/go-ole/go-ole v1.2.5
+## explicit
+github.com/go-ole/go-ole
+github.com/go-ole/go-ole/oleutil
+# github.com/jaypipes/ghw v0.8.0
+## explicit
+github.com/jaypipes/ghw/pkg/block
+github.com/jaypipes/ghw/pkg/context
+github.com/jaypipes/ghw/pkg/linuxpath
+github.com/jaypipes/ghw/pkg/marshal
+github.com/jaypipes/ghw/pkg/option
+github.com/jaypipes/ghw/pkg/pci/address
+github.com/jaypipes/ghw/pkg/snapshot
+github.com/jaypipes/ghw/pkg/unitutil
+github.com/jaypipes/ghw/pkg/util
+# github.com/mackerelio/go-osstat v0.2.0
+## explicit
+github.com/mackerelio/go-osstat/cpu
+github.com/mackerelio/go-osstat/memory
+# github.com/pkg/errors v0.8.0
+github.com/pkg/errors
+# github.com/shirou/gopsutil v3.21.5+incompatible
+## explicit
+# golang.org/x/sys v0.0.0-20210611083646-a4fc73990273
+## explicit
+golang.org/x/sys/internal/unsafeheader
+golang.org/x/sys/unix
+golang.org/x/sys/windows
+# gopkg.in/yaml.v2 v2.4.0
+## explicit
+gopkg.in/yaml.v2
+# howett.net/plist v0.0.0-20181124034731-591f970eefbb
+howett.net/plist
