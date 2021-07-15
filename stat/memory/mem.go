@@ -20,6 +20,7 @@ func GetMemStats() *Mem {
 	if err != nil {
 		panic(err)
 	}
+
 	return &Mem{
 		Total:     capacity.Capacity(mem.Total),
 		Used:      capacity.Capacity(mem.Used),

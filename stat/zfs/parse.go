@@ -66,6 +66,7 @@ func parseZpoolConfigLines(v string, poolStatus *Zpool) {
 			poolStatus.CheckSumErrors = state.CheckSum
 			poolStatus.Message = state.Message
 			i++
+
 			continue
 		}
 
@@ -236,13 +237,14 @@ func FlexSplit(v string, delim string) []string {
 	vLen := len(v)
 
 	for i := 0; i < vLen; i++ {
-		if vLen >= i + delimLen && v[i:i+delimLen] == delim {
+		if vLen >= i+delimLen && v[i:i+delimLen] == delim {
 			if tmp.Len() > 0 {
 				out = append(out, tmp.String())
 				tmp.Reset()
 			}
 
-			i+=delimLen-1
+			i += delimLen - 1
+
 			continue
 		}
 

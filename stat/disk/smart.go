@@ -15,14 +15,14 @@ type SMARTExitCode int
 
 const (
 	SmartOK                SMARTExitCode = 0
-	SmartCmdFailed         SMARTExitCode = 1
-	DeviceOpenFailed       SMARTExitCode = 2
-	SmartResponseError     SMARTExitCode = 4
-	SmartDiskFailing       SMARTExitCode = 8
-	SmartPrefail           SMARTExitCode = 16
-	SmartPreviousPrefail   SMARTExitCode = 32
-	SmartErrorLogHasErrors SMARTExitCode = 64
-	SmartSelfTestErrors    SMARTExitCode = 128
+	SmartCmdFailed                       = 1
+	DeviceOpenFailed                     = 2
+	SmartResponseError                   = 4
+	SmartDiskFailing                     = 8
+	SmartPrefail                         = 16
+	SmartPreviousPrefail                 = 32
+	SmartErrorLogHasErrors               = 64
+	SmartSelfTestErrors                  = 128
 )
 
 var (
@@ -226,6 +226,7 @@ func (s *SMARTInfo) String() string {
 	if err != nil {
 		panic(err)
 	}
+
 	return string(b)
 }
 
@@ -239,7 +240,9 @@ func (s *SMARTInfo) Error() error {
 	if s.Smartctl.ExitStatus == 0 {
 		return nil
 	}
+
 	var buf bytes.Buffer
+
 	fmt.Fprintf(&buf, "smartctl error: %s", s.ExitCode)
 
 	for _, msg := range s.Messages {
